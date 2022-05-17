@@ -1,88 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BallsAngus</title>
-    <link rel="stylesheet" href="../static/css/styling.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>BallsAngus</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/profile-img.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
+
 <body>
-    <div class="visible" id="intro">
-        <h1 id="name">Real Name</h1>
-        <div id="big-box">
-            <div class="container-visible intro-container container">
-                <h2 class="header">About Me</h2>
-                <ul>
-                    <li>CS @ Berkeley</li>
-                    <li>Not telling you where I live :P</li>
-                    <li>Top 2% osu! player</li>
-                    <li>I don't sleep x-x</li>
-                </ul>
-            </div>
-    
-            <div class="container-visible intro-container container">
-                <h2 class="header">Contact</h2>
-                <ul>
-                    <li>Discord: BallsAngus#6969</li>
-                    <li>Berkeley Email: realname@berkeley.edu</li>
-                    <li>PiE Email: realname@pioneers.berkeley.edu</li>
-                    <li><a href="https://github.com/BallsAngus/">Github</a></li>
-                    <li><a href="https://twitter.com/BallsAngus">Twitter (I don't use this)</a></li>
-                </ul>
-            </div>
-    
-            <div class="container-visible intro-container container">
-                <h2 class="header">Interests</h2>
-                <ul>
-                    <li>PC Building</li>
-                    <li>Mechanical Keebs</li>
-                    <li>Jpop</li>
-                    <li>Stonks</li>
-                    <li>I LiKe ViDeO GaMeS, AnImE, aNd MaNgA</li>
-                </ul>
-            </div>
 
-            <div class="container-hidden project-container test">
-                <h2 class="header">Poorly Named Space Game</h2>
-                <img 
-                src="https://github.com/BallsAngus/SpaceNav/raw/main/Updated%20SpaceNav/Assets/Previews/Preview%202.PNG" 
-                alt="showcase 1" width="400px">
-            </div>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-            <div class="container-hidden project-container test">
-                <h2 class="header"><img src="../img/otherwordly_logo.png" alt="logo" width="230px"></h2>
-                <img 
-                src="https://github.com/BallsAngus/CongressionalTypeGame/raw/master/Assets/Previews/Preview%202.PNG" 
-                alt="showcase 2" width="400px">
-            </div>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
 
-            <div class="container-hidden project-container test">
-                <h2 class="header">Guiturd Hero</h2>
-                <img 
-                src="../img/rhythm.png" 
-                alt="bad game showcase" width="400px">
-            </div>
-
-            <div class="container-hidden project-container test">
-                <h2 class="header"><img src="../img/minecraft_otherworld.png" alt="logo" width="230px"></h2>
-                <img 
-                src="../img/pretty.gif" 
-                alt="showcase 2" width="400px">
-            </div>
+      <div class="profile">
+        <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">BallsAngus</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/BallsAngus" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/julian-tuazon-35856121b/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/BallsAngus" class="github"><i class="bx bxl-github"></i></a>
         </div>
+      </div>
 
-        <div id="stuff">
-            <button id="projects">Cool Stuff?</button>
-        </div>
-        
-        <div>
-            <button>Cursed Mode</button>
-        </div>
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
-    <script src="../static/js/functions.js"></script>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>BallsAngus</h1>
+      <p><span class="typed" data-typed-items="Calpis, カウピース, 칼피스, 卡尔皮斯"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Hiya! I'm BallsAngus, and I'm a rising sophomore at UC Berkeley studying Computer Science and Cognitive Science. I enjoy playing video games, coding random stuff, 
+            learning piano, watching keyboard videos, and sleeping :P
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>I work with:</h3>
+            <p class="fst-italic">
+              
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <img src="assets/img/icons/icon-unity.png" class="img-fluid skill" alt=""> <strong>Unity Game Engine</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <img src="assets/img/icons/icon-opengl.png" class="img-fluid skill" alt=""> <strong>GLSL</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <img src="assets/img/icons/icon-java.png" class="img-fluid skill" alt=""> <strong>Java</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <img src="assets/img/icons/icon-blender.png" class="img-fluid skill" alt=""> <strong>Blender</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <img src="assets/img/icons/icon-latex.png" class="img-fluid skill" alt=""> <strong>Sinful Google Docs</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <img src="assets/img/icons/icon-web.png" class="img-fluid skill" alt=""> <strong>Web Tools</strong></li>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <img src="assets/img/icons/icon-forge.png" class="img-fluid skill" alt=""> <strong>Minecraft Forge</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <img src="assets/img/icons/icon-linux.png" class="img-fluid skill" alt=""> <strong>Linux</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <img src="assets/img/icons/icon-ps.jpeg" class="img-fluid skill" alt=""> <strong>Adobe Photoshop</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <img src="assets/img/icons/icon-python.webp" class="img-fluid skill" alt=""> <strong>Python</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <img src="assets/img/icons/icon-chashtag.png" class="img-fluid skill" alt=""> <strong>C Hashtag</strong></li>
+                  <li><i class="bi bi-chevron-right"></i> <img src="assets/img/icons/icon-bootstrap.png" class="img-fluid skill" alt=""> <strong>Bootstrap</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Projects</h2>
+            <p>Some of the cool stuff I've made over the years.</p>
+          </div>
+  
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">Games</li>
+                <li data-filter=".filter-card">Mods</li>
+                <li data-filter=".filter-web">Web</li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-1.gif" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-1.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Rhythm Surfer - Guitar hero clone built with Unity Game Engine for the Skoolcade 2019 Development Competition."><i class="bx bx-plus"></i></a>
+                  <a href="#portfolio" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-2.gif" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-2.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Minecraft: Otherworld - Minecraft exploration modpack for 1.12.2 and 1.16.5, focused on enhancing the vanilla game. Built with ZenScript and custom mods developed in Java using the Minecraft Forge API."><i class="bx bx-plus"></i></a>
+                  <a href="#portfolio" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-3.gif" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="SpaceNav - A poorly named, procedurally generated space simulator, developed in the Unity Game Engine for my CODE Academy
+                  final project. Implements Simplex and Perlin Noise algorithms for terrain generation, and Unity's URP and GLSL for graphics."><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/BallsAngus/SpaceNav" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-4.gif" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Otherwordly - A space themed typing game for the 2020 Congressional App Competition, created using the Unity Game 
+                  Engine."><i class="bx bx-plus"></i></a>
+                  <a href="https://github.com/BallsAngus/CongressionalTypeGame" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-5.gif" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="Stampunk - Procedurally generated top-down shooter game using the Unity Game Engine, C#, and A* Pathfinding Project."><i class="bx bx-plus"></i></a>
+                  <a href="https://kevponce4.itch.io/stampunk" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-6.gif" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.gif" data-gallery="portfolioGallery" class="portfolio-lightbox" 
+                  title="EECS 16BEE - A static website developed in HTML, CSS, and Bootstrap 5.0 that provides information on the decline of pollinator populations. 
+                  Developed for my final ESPM 50AC project at UC Berkeley."><i class="bx bx-plus"></i></a>
+                  <a href="https://eecs16bee-heroku.herokuapp.com/index.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Portfolio Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Real Name</h4>
+              <p><em>A Computer Science and Cognitive Science double major interested in applications of computing and neuroscience.</em></p>
+              <ul>
+                <li>Don't doxx me.</li>
+                <li>(123) 456-7891</li>
+                <li>j.tuazon@berkeley.edu</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+                <h4>Bachelor of Arts, Computer Science (BA)</h4>
+                <h5>2021 - 2024</h5>
+                <p><em>UC Berkeley, Berkeley, CA 94720</em></p>
+                <p>Relevant Coursework:</p>
+                <ul>
+                    <li>Structure and Interpretation of Computer Programs (CS 61A)</li>
+                    <li>Data Structures and Algorithms (CS 61B)</li>
+                    <li>Discrete Mathematics and Probability Theory (CS 70)</li>
+                    <li>Foundations of Data Science (DATA C8)</li>
+                    <li>Designing Information Systems and Devices I (EECS 16A)</li>
+                    <li>Designing Information Systems and Devices II (EECS 16B)</li>
+                    <li>Machine Structures (CS 61C)</li>
+                    <li>Efficient Algorithms and Intractable Problems (CS 170)</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <h4>Bachelor of Arts, Cognitive Science (BA)</h4>
+                <h5>2021 - 2024</h5>
+                <p><em>UC Berkeley, Berkeley, CA 94720</em></p>
+                <p>Relevant Coursework:</p>
+                <ul>
+                    <li>Introduction to Cognitive Science (COGSCI 1B)</li>
+                </ul>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Experience</h3>
+            <div class="resume-item">
+                <h3>Pioneers in Engineering</h3>
+                <h4>Software Engineer, Shepherd Team</h4>
+                <h5>2021 - Present</h5>
+                <p><em>Berkeley, CA</em></p>
+                <ul>
+                    <li>Non-profit organization at UC Berkeley dedicated to offering STEM education in the Bay Area.</li>
+                    <li>Developed and tested Python coding challenges for Spring 2022 competition hosted for more than 30 Bay
+                        Area high schools.</li>
+                    <li>Integrated Google Sheets API into shepherd Flask application with Python, allowing judges to
+                        dynamically read and write student scores during competition</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <h3>Game Development and Design at Berkeley</h3>
+                <h4>Programmer</h4>
+                <h5>2021 - 2022</h5>
+                <p><em>Berkeley, CA</em></p>
+                <ul>
+                    <li>Developed procedurally generated top-down shooter game using the Unity Game Engine, C#, and A*
+                        Pathfinding Project with a team of five over the course of one semester.</li>
+                    <li>Designed game webpage using HTML/CSS and presented game at final school showcase to interested
+                        students and faculty.</li>
+                    <li>Create UI and menu elements using Adobe Photoshop.</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <h3>CODE Academy at Pacifica High School</h3>
+                <h4>Student</h4>
+                <h5>2017 - 2021</h5>
+                <p><em>Oxnard, CA</em></p>
+                <ul>
+                    <li>Led presentations and tutoring for AP Computer Science courses, Unity Game Engine tutorials, Linux Ubuntu cybersecurity,
+                        and Java robotics programming with groups ranging from five to thirty students.
+                        </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
-
-
