@@ -751,28 +751,32 @@ section {
 .portfolio .portfolio-wrap:focus-within .portfolio-links {
   bottom: 0;
 }
-/* Bobbing logo preview (placeholder until an animation is made) */
-.portfolio .portfolio-wrap .portfolio-logo img {
+/* Logo overlaid on a background image, bobbing (placeholder until an animation is made) */
+.portfolio .portfolio-logo-stack {
+  position: relative;
+}
+.portfolio .portfolio-wrap .portfolio-logo-stack .portfolio-logo-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 82%;
   height: auto;
   aspect-ratio: auto;
   object-fit: contain;
   filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.45));
+  transform: translate(-50%, -50%);
   animation: logo-bob 3s ease-in-out infinite;
-}
-.portfolio .portfolio-item:nth-child(even) .portfolio-logo img {
-  animation-delay: -1.5s;
 }
 @keyframes logo-bob {
   0%, 100% {
-    transform: translateY(-6px) rotate(-1deg);
+    transform: translate(-50%, calc(-50% - 6px)) rotate(-1deg);
   }
   50% {
-    transform: translateY(6px) rotate(1deg);
+    transform: translate(-50%, calc(-50% + 6px)) rotate(1deg);
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .portfolio .portfolio-wrap .portfolio-logo img {
+  .portfolio .portfolio-wrap .portfolio-logo-stack .portfolio-logo-overlay {
     animation: none;
   }
 }
