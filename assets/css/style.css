@@ -751,6 +751,31 @@ section {
 .portfolio .portfolio-wrap:focus-within .portfolio-links {
   bottom: 0;
 }
+/* Bobbing logo preview (placeholder until an animation is made) */
+.portfolio .portfolio-wrap .portfolio-logo img {
+  width: 82%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.45));
+  animation: logo-bob 3s ease-in-out infinite;
+}
+.portfolio .portfolio-item:nth-child(even) .portfolio-logo img {
+  animation-delay: -1.5s;
+}
+@keyframes logo-bob {
+  0%, 100% {
+    transform: translateY(-6px) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(6px) rotate(1deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portfolio .portfolio-wrap .portfolio-logo img {
+    animation: none;
+  }
+}
 .portfolio .portfolio-wrap:focus {
   outline: 2px solid #149ddd;
   outline-offset: 2px;
