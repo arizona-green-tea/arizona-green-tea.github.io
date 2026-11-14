@@ -408,7 +408,68 @@ section {
   transform: translateY(-10px);
 }
 
-
+/* Grouped skill grid */
+.about .content .skill-group {
+  margin-top: 22px;
+}
+.about .content .skill-group h4 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #149ddd;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e4edf9;
+}
+.about .content ul.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+  gap: 10px 16px;
+  margin: 0;
+}
+.about .content ul.skill-grid li {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #272829;
+  line-height: 1.25;
+}
+.about .content ul.skill-grid .skill {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin: 0;
+  object-fit: contain;
+  transition: 250ms;
+}
+.about .content ul.skill-grid li:hover .skill {
+  transform: translateY(-4px);
+}
+.about .content ul.skill-grid i.skill-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  line-height: 1;
+  margin: 0;
+}
+.about .content ul.skill-grid .skill-tile {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #173b6c;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
 
 /*--------------------------------------------------------------
 # Resume
@@ -660,6 +721,7 @@ section {
   color: rgba(255, 255, 255, 0.85);
   display: -webkit-box;
   -webkit-line-clamp: 5;
+  line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
