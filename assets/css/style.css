@@ -567,7 +567,7 @@ section {
 .education .education-item:last-child {
   padding-bottom: 0;
 }
-.education .resume-item::before {
+.education .education-item::before {
   content: "";
   position: absolute;
   width: 16px;
